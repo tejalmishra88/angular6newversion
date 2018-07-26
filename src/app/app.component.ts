@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { hellocomponent } from './hello/hello.component';
+
 
 @Component({
   selector: 'app-root',
@@ -8,5 +8,12 @@ import { hellocomponent } from './hello/hello.component';
 })
 
 export class AppComponent {
-  title = 'app';
+myvariable = 'app';
+mydisabledvalue = false
+constructor(){
+}
+callmyfunction(){
+  this.mydisabledvalue=!this.mydisabledvalue
+  console.log("function called!")
+}
 }
