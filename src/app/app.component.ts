@@ -9,13 +9,4 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
   title = 'app';
-
-  constructor(){
-   console.log("this statement by constructor",this.simplemethod (5,2)) 
-  }
-
- 
-  simplemethod(a,b){
-    return a*b
-  }
 }
