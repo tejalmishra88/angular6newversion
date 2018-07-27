@@ -8,12 +8,9 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-myvariable = 'app';
-mydisabledvalue = false
-constructor(){
-}
-callmyfunction(){
-  this.mydisabledvalue=!this.mydisabledvalue
-  console.log("function called!")
-}
+text = 'app';
+updateValue(e) {
+  this.text=e.target.value
+  console.log(e.target.value)}
+
 }

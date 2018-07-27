@@ -1,2 +1,4 @@
 <input type= "text" value="{{ myvariable }}" [disabled]="mydisabledvalue"/>
 <button (click)="callmyfunction">hey there</button> 
+<input type="text" [value]="text" (input)="updateValue($event)">
+{{text}}
