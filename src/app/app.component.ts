@@ -8,7 +8,8 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-  records = [{ 
+  records = [
+    { 
     name: 'tejal',
     online:true
 },
@@ -19,7 +20,20 @@ export class AppComponent {
 {
   name:'work',
   online:true
-}]
+},
+{ 
+  name: 'tejal',
+  online:true
+},
+{
+  name:'abc',
+  online:false
+},
+{
+name:'work',
+online:true
+}
+]
 }
 
 
