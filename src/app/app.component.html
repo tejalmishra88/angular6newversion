@@ -1,4 +1,10 @@
-<input type= "text" value="{{ myvariable }}" [disabled]="mydisabledvalue"/>
-<button (click)="callmyfunction">hey there</button> 
-<input type="text" [value]="text" (input)="updateValue($event)">
-{{text}}
+<table>
+    <tr>
+        <td>name</td>
+        <td>is online?</td>
+    </tr>
+    <tr *ngFor="let record of records">
+        <td>{{record.name}}</td>
+        <td>{{record.online}}</td>
+        </tr>
+</table>

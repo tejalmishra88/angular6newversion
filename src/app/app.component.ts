@@ -8,9 +8,19 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-text = 'app';
-updateValue(e) {
-  this.text=e.target.value
-  console.log(e.target.value)}
-
+  records = [{ 
+    name: 'tejal',
+    online:true
+},
+  {
+    name:'abc',
+    online:false
+  },
+{
+  name:'work',
+  online:true
+}]
 }
+
+
+
