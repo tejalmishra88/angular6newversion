@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { RecordsService} from './records.service';
 
-interface myData { obj: object}
+interface myData {obj: Array<object>}
 
 @Component({
   selector: 'app-root',
