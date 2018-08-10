@@ -13,7 +13,12 @@ export class LoginComponent implements OnInit {
   }
   loginUser(event){
     event.preventDefault()
-    console.log(event)
+    const target = event.target
+    const username= target.querrySelector('#username').value
+    const password= target.querrySelector('#password').value
+
+    this.Auth.getUserDetails(username, password)
+    console.log(username, password)
   }
 
 }
