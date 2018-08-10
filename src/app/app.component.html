@@ -1,14 +1,1 @@
-<table>
-    <tr>
-        <td>S.No.</td>
-        <td>name</td>
-        <td>is online?</td>
-    </tr>
-    <tr *ngFor="let record of records; let myIndex = index;let firstRecord = first;let lastRecord= last;
-     let evenRecord = even; let oddRecord= odd"
-    [ngClass]="{odd: oddRecord, even:evenRecord}">
-        <td>{{ myIndex+1  }}</td>
-        <td>{{record.name}}</td>
-        <td>{{record.online}}</td>
-        </tr>
-</table>
+<router-outlet></router-outlet>
