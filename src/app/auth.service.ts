@@ -7,10 +7,10 @@ import { HttpClient} from '@angular/common/http';
 export class AuthService {
 
   constructor( private http:  HttpClient) { }
-  getUserDetails(){
+  getUserDetails(username, password){
     //post these details to api server return user info if correct
     return this.http.post('/api/auth.php',{username, password
-    }).subscribe(data =>{ console.log(data, "is what we got from server")})
+    })
 
     
   }
