@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule} from '@angular/router';
 import { HttpClientModule} from '@angular/common/http';
 import { AuthService } from './auth.service' ;
+import { AuthGuard} from './auth.guard';
 
 
 import { AppComponent } from './app.component';
@@ -29,7 +30,8 @@ import { HomeComponent } from './home/home.component';
       },
       {
         path:'admin',
-        component:AdminComponent
+        component:AdminComponent,
+        canActivate:[AuthGuard]
       },
       {
         path: '',
@@ -41,7 +43,7 @@ import { HomeComponent } from './home/home.component';
 
 
   ],
-  providers:[AuthService],
+  providers:[AuthService, AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
